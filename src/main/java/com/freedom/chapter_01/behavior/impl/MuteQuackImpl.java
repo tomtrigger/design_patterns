@@ -6,6 +6,6 @@ public class MuteQuackImpl implements QuackBeHavior {
 
     @Override
     public void quack() {
-
+        System.out.println("<< silence >>");
     }
 }

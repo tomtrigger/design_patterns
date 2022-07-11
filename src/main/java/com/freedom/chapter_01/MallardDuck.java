@@ -1,12 +1,12 @@
 package com.freedom.chapter_01;
 
-import com.freedom.chapter_01.behavior.impl.FlyNoWayImpl;
+import com.freedom.chapter_01.behavior.impl.FlyWithWingsImpl;
 import com.freedom.chapter_01.behavior.impl.QuackImpl;
 
 public class MallardDuck extends Duck{
 
     public MallardDuck() {
-        flyBehavior = new FlyNoWayImpl();
+        flyBehavior = new FlyWithWingsImpl();
         quackBeHavior = new QuackImpl();
     }
 

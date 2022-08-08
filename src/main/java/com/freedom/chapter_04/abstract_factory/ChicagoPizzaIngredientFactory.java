@@ -1,0 +1,45 @@
+package com.freedom.chapter_04.abstract_factory;
+
+import com.freedom.chapter_04.abstract_factory.product.*;
+import com.freedom.chapter_04.abstract_factory.product.california.GoatCheese;
+import com.freedom.chapter_04.abstract_factory.product.chicago.FrozenClams;
+import com.freedom.chapter_04.abstract_factory.product.chicago.PlumTomatoSauce;
+import com.freedom.chapter_04.abstract_factory.product.ny.SlicePepperoni;
+import com.freedom.chapter_04.abstract_factory.product.ny.ThinCrustDough;
+import com.freedom.chapter_04.abstract_factory.product.veggies.Garlic;
+import com.freedom.chapter_04.abstract_factory.product.veggies.Mushroom;
+import com.freedom.chapter_04.abstract_factory.product.veggies.Onion;
+import com.freedom.chapter_04.abstract_factory.product.veggies.RedPepper;
+
+public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
+    @Override
+    public Dough createDough() {
+        return new ThinCrustDough();
+    }
+
+    @Override
+    public Sauce createSauce() {
+        return new PlumTomatoSauce();
+    }
+
+    @Override
+    public Cheese createCheese() {
+        return new GoatCheese();
+    }
+
+    @Override
+    public Veggies[] createVeggies() {
+        Veggies[] veggies = new Veggies[]{new Garlic(), new Mushroom(), new Onion(), new RedPepper()};
+        return new Veggies[0];
+    }
+
+    @Override
+    public Pepperoni createPepperoni() {
+        return new SlicePepperoni();
+    }
+
+    @Override
+    public Clams createClams() {
+        return new FrozenClams();
+    }
+}

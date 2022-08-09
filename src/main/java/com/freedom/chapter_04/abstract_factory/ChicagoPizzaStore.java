@@ -1,5 +1,6 @@
 package com.freedom.chapter_04.abstract_factory;
 
+import com.freedom.chapter_04.abstract_factory.factory.ChicagoPizzaIngredientFactory;
 import com.freedom.chapter_04.abstract_factory.product.*;
 
 public class ChicagoPizzaStore extends  PizzaStore{

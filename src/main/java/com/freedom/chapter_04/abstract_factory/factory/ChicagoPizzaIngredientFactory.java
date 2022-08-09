@@ -1,5 +1,6 @@
-package com.freedom.chapter_04.abstract_factory;
+package com.freedom.chapter_04.abstract_factory.factory;
 
+import com.freedom.chapter_04.abstract_factory.PizzaIngredientFactory;
 import com.freedom.chapter_04.abstract_factory.product.*;
 import com.freedom.chapter_04.abstract_factory.product.california.GoatCheese;
 import com.freedom.chapter_04.abstract_factory.product.chicago.FrozenClams;
